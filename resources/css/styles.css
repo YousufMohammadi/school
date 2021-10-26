@@ -15,6 +15,7 @@ header{
     background-image:linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.3)), url("img/logo.png");
     background-size: cover;
     background-position: top ;
+    background-attachment: fixed;
     width: 100%;
     height: 100vh;
 }
@@ -74,13 +75,14 @@ ul li.logo{
 /*            section-1             */
 /* -----------------------------  */
 .container{
-    background-color: whitesmoke;
+    background-color: #e6e6e6;
+
 
 
 }
 .container .row{
     margin-right: auto;
-    margin-left: auto;
+    margin-left: 3.3%;
 }
 .container .row .span-1-of-4{
     background-color: #F9A826;
@@ -96,11 +98,11 @@ ul li.logo{
     transition: background-color 0.3s;
 
 }
-.container .row .span-1-of-4 i img{
+.container .row .span-1-of-4 img{
     width: 40%;
     height: 40%;
     margin-bottom: 5px;
-    border-bottom: 1px solid whitesmoke;
+    /*border-bottom: 1px solid whitesmoke;*/
 }
 .container .row .span-1-of-4 .student{
     font-size: 16px;
@@ -112,6 +114,7 @@ ul li.logo{
     border-radius: 10px;
     background-color: whitesmoke;
     text-decoration: none;
+
 }
 .see-link:hover{
     color: whitesmoke;
