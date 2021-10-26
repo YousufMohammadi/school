@@ -45,7 +45,7 @@ ul li img{
     height: 10vh;
     border-radius: 50%;
     margin-left: 10px;
-    margin-top: -5px;
+    margin-top: -8px;
 }
 ul li a:hover{
     color: #F9A826;
@@ -56,4 +56,67 @@ ul li a:hover{
 ul li.logo{
     margin-right: auto;
 }
+/*.psrsgrsph{*/
+    /*color: whitesmoke;*/
+    /*direction: rtl;*/
+    /*display: inline-block;*/
+    /**/
+    /*!*margin-right: -100px;*!*/
+    /*font-size: 35px;*/
+    /*background-color: red;*/
+    /*opacity: 50%;*/
+    /*padding: 20px;*/
+    /*border-radius: 10px;*/
 
+/*}*/
+
+/* -----------------------------  */
+/*            section-1             */
+/* -----------------------------  */
+.container{
+    background-color: whitesmoke;
+
+
+}
+.container .row{
+    margin-right: auto;
+    margin-left: auto;
+}
+.container .row .span-1-of-4{
+    background-color: #F9A826;
+    color: whitesmoke;
+    padding: 4%;
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.container .row .span-1-of-4:hover{
+    background-color: #f9ac06;
+    transition: background-color 0.3s;
+
+}
+.container .row .span-1-of-4 i img{
+    width: 40%;
+    height: 40%;
+    margin-bottom: 5px;
+    border-bottom: 1px solid whitesmoke;
+}
+.container .row .span-1-of-4 .student{
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+.see-link{
+    color: #F9A826;
+    padding:10px 80px 10px 80px;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    text-decoration: none;
+}
+.see-link:hover{
+    color: whitesmoke;
+    background-color: #F9A826;
+    border: 1px solid whitesmoke;
+    transition: color 0.5s,background-color 0.5s, border-bottom-color 0.5s;
+
+}
