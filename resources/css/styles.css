@@ -57,19 +57,6 @@ ul li a:hover{
 ul li.logo{
     margin-right: auto;
 }
-/*.psrsgrsph{*/
-    /*color: whitesmoke;*/
-    /*direction: rtl;*/
-    /*display: inline-block;*/
-    /**/
-    /*!*margin-right: -100px;*!*/
-    /*font-size: 35px;*/
-    /*background-color: red;*/
-    /*opacity: 50%;*/
-    /*padding: 20px;*/
-    /*border-radius: 10px;*/
-
-/*}*/
 
 /* -----------------------------  */
 /*            section-1             */
@@ -123,14 +110,53 @@ ul li.logo{
 .contuct-form{
 background-image: linear-gradient(to top right , rgba(2, 167, 0, 0.5), rgba(255, 140, 0, 0.7));
     height: 100vh;
+    direction: rtl;
+}
+input{
+    height: 45px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 2px solid #F9A826;
+    background-color: #2a2a2a;
+    color: whitesmoke;
+}
+input::placeholder{
+    color: whitesmoke;
+}
+input,textarea{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 
 }
-.contuct-form input,textarea {
+textarea{
+    border: 1px solid #F9A826;
+    background-color: #2a2a2a;
+    color: whitesmoke;
+    margin-bottom: 10px;
+}
+input[type=text],
+input[type=email],
+textarea {
     width: 50%;
-    display: block;
-    /*direction: rtl;*/
-    /*float: right;*/
-    margin-right: auto;
-    margin-left: auto;
+}
+input[type=submit]{
+    color: whitesmoke;
+    padding:10px 80px 10px 80px;
+    border-radius: 10px;
+    background-color: rgba(2, 167, 0, 0.5);
 
+}
+input[type=submit]:hover{
+    color: rgba(2, 167, 0, 0.5);
+    background-color: #F9A826;
+    border: 2px solid rgb(2, 167, 0);
+    transition: color 0.5s,background-color 0.5s, border-bottom-color 0.5s;
+}
+.message{
+    color: whitesmoke;
+    font-size: 30px;
+    display: block;
+    text-align: center;
+    padding-top: 10px;
 }
