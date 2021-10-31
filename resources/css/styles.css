@@ -76,14 +76,8 @@ ul li.logo{
 /* -----------------------------  */
 .container{
     background-color: #e6e6e6;
-
-
-
 }
-.container .row{
-    margin-right: auto;
-    margin-left: 3.3%;
-}
+
 .container .row .span-1-of-4{
     background-color: #F9A826;
     color: whitesmoke;
@@ -121,5 +115,22 @@ ul li.logo{
     background-color: #F9A826;
     border: 1px solid whitesmoke;
     transition: color 0.5s,background-color 0.5s, border-bottom-color 0.5s;
+
+}
+/* -----------------------------  */
+/*    section-2 contuct-form      */
+/* -----------------------------  */
+.contuct-form{
+background-image: linear-gradient(to top right , rgba(2, 167, 0, 0.5), rgba(255, 140, 0, 0.7));
+    height: 100vh;
+
+}
+.contuct-form input,textarea {
+    width: 50%;
+    display: block;
+    /*direction: rtl;*/
+    /*float: right;*/
+    margin-right: auto;
+    margin-left: auto;
 
 }
