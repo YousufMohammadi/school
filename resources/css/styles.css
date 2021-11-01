@@ -27,7 +27,7 @@ ul li{
 
 }
 
-ul li a {
+header ul li a {
     text-decoration: none;
     color: whitesmoke;
     padding:10px 30px 10px 30px;
@@ -48,7 +48,7 @@ ul li img{
     margin-left: 10px;
     margin-top: -8px;
 }
-ul li a:hover{
+header ul li a:hover{
     color: #F9A826;
     border: 1px solid #F9A826;
     background-color: whitesmoke;
@@ -63,6 +63,8 @@ ul li.logo{
 /* -----------------------------  */
 .container{
     background-color: #e6e6e6;
+    padding-right:2% ;
+    padding-left: 2%;
 }
 
 .container .row .span-1-of-4{
@@ -109,6 +111,8 @@ ul li.logo{
 /*    section-2 working time      */
 /* -----------------------------  */
 .time{
+    padding-left: 5%;
+    padding-right: 5%;
     text-align: center;
     direction: rtl;
     height: 80vh;
@@ -177,4 +181,40 @@ input[type=submit]:hover{
     display: block;
     text-align: center;
     padding-top: 10px;
+}
+/* -----------------------------  */
+/*    footer social-media      */
+/* -----------------------------  */
+
+footer{
+    width: 100%;
+    background-color: #2a2a2a;
+    direction: rtl;
+    float: right;
+    padding-top: 40px;
+    text-align: center;
+}
+.lecture{
+    color: whitesmoke;
+    float: right;
+
+}
+.privecy a{
+    color: whitesmoke;
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 25px;
+}
+.describe{
+    color: whitesmoke;
+    font-size: 20px;
+}
+.describe img{
+    width: 20px;
+    height: 20px;
+
+}
+.social-media{
+    float: left;
 }
