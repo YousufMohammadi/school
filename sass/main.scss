@@ -21,45 +21,49 @@ header{
     background-attachment: fixed;
     width: 100%;
     height: 100vh;
-}
-ul li{
-    list-style-type: none;
-    display: inline-block;
-    margin-top: 30px;
-    float: right;
+    ul {
+        list-style-type: none;
+        padding:0 3%;
+        li{
+            
+            display: inline-block;
+            margin-top: 30px;
+            float: right;
+           
+            a{
+                text-decoration: none;
+                color: $color-text-white;
+                padding:10px 30px 10px 30px;
+                background-color: $color-orange;
+                border: 1px solid $color-text-white;
+                border-radius: 25px;
+                margin-left: 5px;
 
+            }
+            a:hover{
+                color: $color-orange;
+                border: 1px solid $color-orange;
+                background-color:$color-text-white;
+                transition: background-color 0.5s;
+            }
+    
+        }
+    }
+    .logo{
+        float: left;
+        img{
+            border-radius: 50%;
+            width: 10vm;
+            height: 10vh;
+            margin-left: 10px;
+            margin-top: -2vh;
+        }
+    }
 }
 
-header ul li a {
-    text-decoration: none;
-    color: $color-text-white;
-    padding:10px 30px 10px 30px;
-    background-color: $color-orange;
-    border: 1px solid $color-text-white;
-    border-radius: 25px;
-    margin-left: 5px;
 
-}
 
-ul li.logo{
-    float: left;
-}
-ul li img{
-    width: 10vm;
-    height: 10vh;
-    border-radius: 50%;
-    margin-left: 10px;
-    margin-top: -8px;
-}
-header ul li a:hover{
-    color: $color-orange;
-    border: 1px solid $color-orange;
-    background-color:$color-text-white;
-    transition: background-color 0.5s;
-}
-ul li.logo{
-    margin-right: auto;
-}
+
 
 /* -----------------------------  */
 /*            section-1             */
@@ -68,123 +72,106 @@ ul li.logo{
     background-color: $color-text-white;
     padding-right:2% ;
     padding-left: 2%;
-}
-
-.container .row .span-1-of-4{
-    background-color: $color-orange;
-    color: $color-text-white;
-    padding: 4%;
-    display: inline-block;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    text-align: center;
-}
-.container .row .span-1-of-4:hover{
-    background-color: darken($color: $color-orange, $amount: 10);
+    .span-1-of-4{
+        background-color: $color-orange;
+        color: $color-text-white;
+        padding: 4%;
+        display: inline-block;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        text-align: center;
+        img{
+            width: 40%;
+            height: 40%;
+            margin-bottom: 5px;
+            /*border-bottom: 1px solid whitesmoke;*/
+        }
+        .student{
+            font-size: 16px;
+            margin-bottom: 25px;
+        }
+        .see-link{
+            color: $color-orange;
+            padding:10px 80px 10px 80px;
+            border-radius: 10px;
+            background-color: $color-text-white;
+            text-decoration: none;
+        
+        }
+        .see-link:hover{
+            color: $color-text-white;
+            background-color: $color-orange;
+            border: 1px solid $color-text-white;
+            transition: color 0.5s,background-color 0.5s, border-bottom-color 0.5s;
+        
+        } 
+    }
+    .span-1-of-4:hover{background-color: darken($color: $color-orange, $amount: 10);
     transition: background-color 0.3s;
-
-}
-.container .row .span-1-of-4 img{
-    width: 40%;
-    height: 40%;
-    margin-bottom: 5px;
-    /*border-bottom: 1px solid whitesmoke;*/
-}
-.container .row .span-1-of-4 .student{
-    font-size: 16px;
-    margin-bottom: 25px;
-}
-.see-link{
-    color: $color-orange;
-    padding:10px 80px 10px 80px;
-    border-radius: 10px;
-    background-color: $color-text-white;
-    text-decoration: none;
-
-}
-.see-link:hover{
-    color: $color-text-white;
-    background-color: $color-orange;
-    border: 1px solid $color-text-white;
-    transition: color 0.5s,background-color 0.5s, border-bottom-color 0.5s;
-
+    }
+   
 }
 
 /* -----------------------------  */
-/*    section-2 working time      */
+/*    section-2 contuct-form      */
 /* -----------------------------  */
-.time{
-    padding-left: 5%;
-    padding-right: 5%;
-    text-align: center;
-    direction: rtl;
-    height: 80vh;
-    background-color: rgba($color-dark, 0.22);
-}
-.time-card{
-    padding: 30px;
-    /*background: rgba(2, 167, 0, 0.5);*/
-    background-image: linear-gradient(to top right , rgba(2, 167, 0, 0.5), rgba(255, 140, 0, 0.7));
-    text-align: center;
-    color: $color-text-white;
-
-}
-/* -----------------------------  */
-/*    section-3 contuct-form      */
-/* -----------------------------  */
-.contuct-form{
-    background-image: linear-gradient(to top right , rgba(2, 167, 0, 0.5), rgba(255, 140, 0, 0.7));
-    height: 100vh;
-    direction: rtl;
-}
-input{
-    height: 45px;
-    margin-bottom: 10px;
-    border-radius: 4px;
-    border: 2px solid $color-orange;
-    background-color: lighten($color: $color-dark, $amount: 10);
-    color: $color-text-white;
-}
-input::placeholder{
-    color:$color-text-white;
-}
-input,textarea{
+@mixin form {
     display: block;
     margin-left: auto;
     margin-right: auto;
 
 }
-textarea{
-    border: 1px solid $color-orange;
-    background-color: lighten($color: $color-dark, $amount: 10);
-    color: $color-text-white;
-    margin-bottom: 10px;
-}
-input[type=text],
-input[type=email],
-textarea {
+
+@mixin form-width {
     width: 50%;
 }
-input[type=submit]{
+.contuct-form{
+    background-image: linear-gradient(to top right , rgba(2, 167, 0, 0.5), rgba(255, 140, 0, 0.7));
+    height: 100vh;
+    direction: rtl;
+    .message{
+        color: $color-text-white;
+        font-size: 30px;
+        display: block;
+        text-align: center;
+        padding-top: 10px;
+    }
+    input{
+        height: 45px;
+        margin-bottom: 10px;
+        border-radius: 4px;
+        border: 2px solid $color-orange;
+        background-color: lighten($color: $color-dark, $amount: 10);
+        color: $color-text-white;
+        @include form();
+        @include form-width();
+    }
+    textarea{
+        @include form();
+        @include form-width();
+        border: 1px solid $color-orange;
+        background-color: lighten($color: $color-dark, $amount: 10);
+        color: $color-text-white;
+        margin-bottom: 10px;
+    }
+    input::placeholder{
+        color:$color-text-white;
+    }
+}
+input.submit{
     color: $color-text-white;
     padding:10px 80px 10px 80px;
     border-radius: 10px;
     background-color: rgba(2, 167, 0, 0.5);
 
 }
-input[type=submit]:hover{
+input.submit:hover{
     color: rgba(2, 167, 0, 0.5);
     background-color: $color-orange;
     border: 2px solid rgb(2, 167, 0);
     transition: color 0.5s,background-color 0.5s, border-bottom-color 0.5s;
 }
-.message{
-    color: $color-text-white;
-    font-size: 30px;
-    display: block;
-    text-align: center;
-    padding-top: 10px;
-}
+
 /* -----------------------------  */
 /*    footer social-media      */
 /* -----------------------------  */
@@ -196,28 +183,41 @@ footer{
     float: right;
     padding-top: 40px;
     text-align: center;
-}
-.lecture{
-    color: $color-text-white;
-    float: right;
-
-}
-.privecy a{
-    color: $color-text-white;
-    text-decoration: none;
-    margin-left: 10px;
-    margin-right: 10px;
-    font-size: 25px;
-}
-.describe{
-    color: $color-text-white;
-    font-size: 20px;
-}
-.describe img{
-    width: 20px;
-    height: 20px;
-
-}
-.social-media{
-    float: left;
+    ul{
+        list-style: none;
+        li{
+            display: inline-block;
+             img{
+                width: 6vm;
+                height: 6vh;
+                border-radius: 50%;
+                margin-left: 10px;
+                margin-top: -8px;
+                
+            }
+            img:hover{
+                opacity: 0.7;
+            }
+        }
+    }
+    .privecy a{
+        color: $color-text-white;
+        text-decoration: none;
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 25px;
+    }
+    .describe{
+        color: $color-text-white;
+        font-size: 20px;
+        img{
+            width: 20px;
+            height: 20px;
+        
+        }
+    }
+    
+    .social-media{
+        float: left;
+    }
 }
