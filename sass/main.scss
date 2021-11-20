@@ -1,3 +1,6 @@
+$color-dark :black;
+$color-orange:#F9A826;
+$color-text-white:whitesmoke;
 *{
     padding: 0;
     margin: 0;
@@ -12,7 +15,7 @@ html{
 /*            header              */
 /* -----------------------------  */
 header{
-    background-image:linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.3)), url("img/logo.png");
+    background-image:linear-gradient(rgba($color-dark, 0.6),rgba($color-dark, 0.3)), url("img/logo.png");
     background-size: cover;
     background-position: top ;
     background-attachment: fixed;
@@ -29,10 +32,10 @@ ul li{
 
 header ul li a {
     text-decoration: none;
-    color: whitesmoke;
+    color: $color-text-white;
     padding:10px 30px 10px 30px;
-    background-color: #F9A826;
-    border: 1px solid whitesmoke;
+    background-color: $color-orange;
+    border: 1px solid $color-text-white;
     border-radius: 25px;
     margin-left: 5px;
 
@@ -49,9 +52,9 @@ ul li img{
     margin-top: -8px;
 }
 header ul li a:hover{
-    color: #F9A826;
-    border: 1px solid #F9A826;
-    background-color: whitesmoke;
+    color: $color-orange;
+    border: 1px solid $color-orange;
+    background-color:$color-text-white;
     transition: background-color 0.5s;
 }
 ul li.logo{
@@ -62,14 +65,14 @@ ul li.logo{
 /*            section-1             */
 /* -----------------------------  */
 .container{
-    background-color: #e6e6e6;
+    background-color: $color-text-white;
     padding-right:2% ;
     padding-left: 2%;
 }
 
 .container .row .span-1-of-4{
-    background-color: #F9A826;
-    color: whitesmoke;
+    background-color: $color-orange;
+    color: $color-text-white;
     padding: 4%;
     display: inline-block;
     margin-top: 5px;
@@ -77,7 +80,7 @@ ul li.logo{
     text-align: center;
 }
 .container .row .span-1-of-4:hover{
-    background-color: #f9ac06;
+    background-color: darken($color: $color-orange, $amount: 10);
     transition: background-color 0.3s;
 
 }
@@ -92,17 +95,17 @@ ul li.logo{
     margin-bottom: 25px;
 }
 .see-link{
-    color: #F9A826;
+    color: $color-orange;
     padding:10px 80px 10px 80px;
     border-radius: 10px;
-    background-color: whitesmoke;
+    background-color: $color-text-white;
     text-decoration: none;
 
 }
 .see-link:hover{
-    color: whitesmoke;
-    background-color: #F9A826;
-    border: 1px solid whitesmoke;
+    color: $color-text-white;
+    background-color: $color-orange;
+    border: 1px solid $color-text-white;
     transition: color 0.5s,background-color 0.5s, border-bottom-color 0.5s;
 
 }
@@ -116,14 +119,14 @@ ul li.logo{
     text-align: center;
     direction: rtl;
     height: 80vh;
-    background-color: rgba(93, 93, 93, 0.22);
+    background-color: rgba($color-dark, 0.22);
 }
 .time-card{
     padding: 30px;
     /*background: rgba(2, 167, 0, 0.5);*/
     background-image: linear-gradient(to top right , rgba(2, 167, 0, 0.5), rgba(255, 140, 0, 0.7));
     text-align: center;
-    color: whitesmoke;
+    color: $color-text-white;
 
 }
 /* -----------------------------  */
@@ -138,12 +141,12 @@ input{
     height: 45px;
     margin-bottom: 10px;
     border-radius: 4px;
-    border: 2px solid #F9A826;
-    background-color: #2a2a2a;
-    color: whitesmoke;
+    border: 2px solid $color-orange;
+    background-color: lighten($color: $color-dark, $amount: 10);
+    color: $color-text-white;
 }
 input::placeholder{
-    color: whitesmoke;
+    color:$color-text-white;
 }
 input,textarea{
     display: block;
@@ -152,9 +155,9 @@ input,textarea{
 
 }
 textarea{
-    border: 1px solid #F9A826;
-    background-color: #2a2a2a;
-    color: whitesmoke;
+    border: 1px solid $color-orange;
+    background-color: lighten($color: $color-dark, $amount: 10);
+    color: $color-text-white;
     margin-bottom: 10px;
 }
 input[type=text],
@@ -163,7 +166,7 @@ textarea {
     width: 50%;
 }
 input[type=submit]{
-    color: whitesmoke;
+    color: $color-text-white;
     padding:10px 80px 10px 80px;
     border-radius: 10px;
     background-color: rgba(2, 167, 0, 0.5);
@@ -171,12 +174,12 @@ input[type=submit]{
 }
 input[type=submit]:hover{
     color: rgba(2, 167, 0, 0.5);
-    background-color: #F9A826;
+    background-color: $color-orange;
     border: 2px solid rgb(2, 167, 0);
     transition: color 0.5s,background-color 0.5s, border-bottom-color 0.5s;
 }
 .message{
-    color: whitesmoke;
+    color: $color-text-white;
     font-size: 30px;
     display: block;
     text-align: center;
@@ -188,26 +191,26 @@ input[type=submit]:hover{
 
 footer{
     width: 100%;
-    background-color: #2a2a2a;
+    background-color: lighten($color: $color-dark, $amount: 10);
     direction: rtl;
     float: right;
     padding-top: 40px;
     text-align: center;
 }
 .lecture{
-    color: whitesmoke;
+    color: $color-text-white;
     float: right;
 
 }
 .privecy a{
-    color: whitesmoke;
+    color: $color-text-white;
     text-decoration: none;
     margin-left: 10px;
     margin-right: 10px;
     font-size: 25px;
 }
 .describe{
-    color: whitesmoke;
+    color: $color-text-white;
     font-size: 20px;
 }
 .describe img{
