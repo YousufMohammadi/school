@@ -12,7 +12,7 @@ html {
 /*            header              */
 /* -----------------------------  */
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url("img/logo.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.3)), url("img/logo.png");
   background-size: cover;
   background-position: top;
   background-attachment: fixed;
@@ -20,22 +20,22 @@ header {
   height: 100vh; }
   header ul {
     list-style-type: none;
-    padding: 0 3%; }
+    padding: 0 3%;
+    direction: rtl; }
     header ul li {
       display: inline-block;
-      margin-top: 30px;
-      float: right; }
+      margin-top: 30px; }
       header ul li a {
         text-decoration: none;
         color: whitesmoke;
         padding: 10px 30px 10px 30px;
-        background-color: #F9A826;
+        background-color: #faa301fb;
         border: 1px solid whitesmoke;
         border-radius: 25px;
         margin-left: 5px; }
       header ul li a:hover {
-        color: #F9A826;
-        border: 1px solid #F9A826;
+        color: #faa301fb;
+        border: 1px solid #faa301fb;
         background-color: whitesmoke;
         transition: background-color 0.5s; }
   header .logo {
@@ -46,6 +46,17 @@ header {
       height: 10vh;
       margin-left: 10px;
       margin-top: -2vh; }
+  header .heading {
+    padding: 30px;
+    background-color: rgba(250, 163, 1, 0.3);
+    text-align: center;
+    color: whitesmoke;
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 20px;
+    transform: translateY(70%); }
+    header .heading:hover {
+      background-color: rgba(199, 130, 1, 0.984314); }
 
 /* -----------------------------  */
 /*            section-1             */
@@ -55,7 +66,7 @@ header {
   padding-right: 2%;
   padding-left: 2%; }
   .container .span-1-of-4 {
-    background-color: #F9A826;
+    background-color: #faa301fb;
     color: whitesmoke;
     padding: 4%;
     display: inline-block;
@@ -71,18 +82,18 @@ header {
       font-size: 16px;
       margin-bottom: 25px; }
     .container .span-1-of-4 .see-link {
-      color: #F9A826;
+      color: #faa301fb;
       padding: 10px 80px 10px 80px;
       border-radius: 10px;
       background-color: whitesmoke;
       text-decoration: none; }
     .container .span-1-of-4 .see-link:hover {
       color: whitesmoke;
-      background-color: #F9A826;
+      background-color: #faa301fb;
       border: 1px solid whitesmoke;
       transition: color 0.5s,background-color 0.5s, border-bottom-color 0.5s; }
   .container .span-1-of-4:hover {
-    background-color: #e69006;
+    background-color: rgba(98, 64, 0, 0.984314);
     transition: background-color 0.3s; }
 
 /* -----------------------------  */
@@ -102,7 +113,7 @@ header {
     height: 45px;
     margin-bottom: 10px;
     border-radius: 4px;
-    border: 2px solid #F9A826;
+    border: 2px solid #faa301fb;
     background-color: #1a1a1a;
     color: whitesmoke;
     display: block;
@@ -114,7 +125,7 @@ header {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
-    border: 1px solid #F9A826;
+    border: 1px solid #faa301fb;
     background-color: #1a1a1a;
     color: whitesmoke;
     margin-bottom: 10px; }
@@ -129,7 +140,7 @@ input.submit {
 
 input.submit:hover {
   color: rgba(2, 167, 0, 0.5);
-  background-color: #F9A826;
+  background-color: #faa301fb;
   border: 2px solid #02a700;
   transition: color 0.5s,background-color 0.5s, border-bottom-color 0.5s; }
 
