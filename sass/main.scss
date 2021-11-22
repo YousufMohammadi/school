@@ -1,7 +1,4 @@
-$color-dark :black;
-$color-orange:#faa301fb;
-$color-green:#033503fb;
-$color-text-white:whitesmoke;
+@import "variables.scss";
 *{
     padding: 0;
     margin: 0;
@@ -15,7 +12,7 @@ html{
 /* -----------------------------  */
 /*            header              */
 /* -----------------------------  */
-header{
+.header{
     background-image:linear-gradient(rgba($color-dark, 0.9),rgba($color-dark, 0.3)), url("img/logo.png");
     background-size: cover;
     background-position: top ;
@@ -243,3 +240,4 @@ footer{
         float: left;
     }
 }
+@import "users.scss";
