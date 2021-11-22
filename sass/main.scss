@@ -1,5 +1,5 @@
 $color-dark :black;
-$color-orange:#F9A826;
+$color-orange:#faa301fb;
 $color-text-white:whitesmoke;
 *{
     padding: 0;
@@ -15,7 +15,7 @@ html{
 /*            header              */
 /* -----------------------------  */
 header{
-    background-image:linear-gradient(rgba($color-dark, 0.6),rgba($color-dark, 0.3)), url("img/logo.png");
+    background-image:linear-gradient(rgba($color-dark, 0.9),rgba($color-dark, 0.3)), url("img/logo.png");
     background-size: cover;
     background-position: top ;
     background-attachment: fixed;
@@ -24,11 +24,12 @@ header{
     ul {
         list-style-type: none;
         padding:0 3%;
+        direction: rtl;
         li{
             
             display: inline-block;
             margin-top: 30px;
-            float: right;
+            // float: right;
            
             a{
                 text-decoration: none;
@@ -57,6 +58,21 @@ header{
             height: 10vh;
             margin-left: 10px;
             margin-top: -2vh;
+        }
+    }
+    .heading{
+        padding: 30px;
+        background-color:rgba($color-orange, 0.3) ;
+        text-align: center;
+        color: $color-text-white;
+        width: 50%;
+        margin: 0 auto;
+        border-radius: 20px;
+        // top: 50;
+        // transform: translateX(4%);
+        transform: translateY(70%);
+        &:hover{
+            background-color: darken($color: $color-orange, $amount: 10);
         }
     }
 }
@@ -106,7 +122,7 @@ header{
         
         } 
     }
-    .span-1-of-4:hover{background-color: darken($color: $color-orange, $amount: 10);
+    .span-1-of-4:hover{background-color: darken($color: $color-orange, $amount: 30);
     transition: background-color 0.3s;
     }
    
