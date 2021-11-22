@@ -1,5 +1,6 @@
 $color-dark :black;
 $color-orange:#faa301fb;
+$color-green:#033503fb;
 $color-text-white:whitesmoke;
 *{
     padding: 0;
@@ -19,8 +20,10 @@ header{
     background-size: cover;
     background-position: top ;
     background-attachment: fixed;
-    width: 100%;
-    height: 100vh;
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 76%);
+    $header-width:100%;
+    width: $header-width;
+    height: 80vh;
     ul {
         list-style-type: none;
         padding:0 3%;
@@ -61,18 +64,18 @@ header{
         }
     }
     .heading{
-        padding: 30px;
-        background-color:rgba($color-orange, 0.3) ;
         text-align: center;
-        color: $color-text-white;
-        width: 50%;
-        margin: 0 auto;
         border-radius: 20px;
-        // top: 50;
-        // transform: translateX(4%);
-        transform: translateY(70%);
+        top: 50%;
+        transform: translate(0,200%);
+        background-image: linear-gradient(to right,lighten($color-orange,$amount:30),darken($color-orange,$amount:10));
+        -webkit-background-clip: text;
+        color: transparent;
+        transition: all .2rem;
         &:hover{
-            background-color: darken($color: $color-orange, $amount: 10);
+            transform: skewX(2deg) scaleY(15deg);
+
+            // background-color: darken($color: $color-orange, $amount: 10);
         }
     }
 }
@@ -85,7 +88,9 @@ header{
 /*            section-1             */
 /* -----------------------------  */
 .container{
-    background-color: $color-text-white;
+    background-image:linear-gradient(to right, rgba($color-green, 0.4),rgba($color-green, 0.2)) ;
+    padding-top: 6rem;
+    margin-top: -6rem;
     padding-right:2% ;
     padding-left: 2%;
     .span-1-of-4{
@@ -103,7 +108,8 @@ header{
             /*border-bottom: 1px solid whitesmoke;*/
         }
         .student{
-            font-size: 16px;
+            font-size: 1rem;
+            font-weight: 600;
             margin-bottom: 25px;
         }
         .see-link{
