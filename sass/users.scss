@@ -2,9 +2,11 @@
 .user-container{
     width: 100%;
     height: 100vh;
-    background-image:linear-gradient(rgba($color-dark, 0.9),rgba($color-dark, 0.3)), url("img/users.png");
+    background-image:linear-gradient(rgba($color-dark, 0.3),rgba($color-dark, 0.9)), url("img/users.png");
+    background-blend-mode: overlay;
     background-size: cover;
     background-position: center;
+    
     .user-header{
        padding:30px 40px ;
 

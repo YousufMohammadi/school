@@ -14,6 +14,7 @@ html{
 /* -----------------------------  */
 .header{
     background-image:linear-gradient(rgba($color-dark, 0.9),rgba($color-dark, 0.3)), url("img/logo.png");
+    background-blend-mode:screen;
     background-size: cover;
     background-position: top ;
     background-attachment: fixed;
@@ -58,6 +59,7 @@ html{
             height: 10vh;
             margin-left: 10px;
             margin-top: -2vh;
+            border: 5px solid $color-orange;
         }
     }
     .heading{
@@ -85,7 +87,7 @@ html{
 /*            section-1             */
 /* -----------------------------  */
 .container{
-    background-image:linear-gradient(to right, rgba($color-green, 0.4),rgba($color-green, 0.2)) ;
+    background-image:linear-gradient(to right, rgba($color-blue, 0.6),rgba($color-blue, 0.2)) ;
     padding-top: 6rem;
     margin-top: -6rem;
     padding-right:2% ;
