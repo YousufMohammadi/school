@@ -1,4 +1,3 @@
-@import url("variables.scss");
 * {
   padding: 0;
   margin: 0;
@@ -191,10 +190,11 @@ footer {
 .user-container {
   width: 100%;
   height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url("img/users.png");
-  background-blend-mode: overlay;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url("img/users.png");
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif; }
   .user-container .user-header {
     padding: 30px 40px; }
     .user-container .user-header ul {
@@ -212,3 +212,57 @@ footer {
           border-radius: 10px; }
           .user-container .user-header ul li a:hover {
             background-color: rgba(199, 130, 1, 0.984314); }
+  .user-container .user-label {
+    background-color: rgba(115, 128, 115, 0.5);
+    border-radius: 20px;
+    text-align: center;
+    width: 50%;
+    padding: 30px 20px;
+    transform: translateY(150%);
+    margin: 0 auto;
+    border: 5px solid whitesmoke; }
+    .user-container .user-label:hover {
+      background-color: rgba(115, 128, 115, 0.9); }
+    .user-container .user-label h1 {
+      color: whitesmoke; }
+
+.table-container {
+  margin-top: 2rem;
+  height: 100vh;
+  padding-top: 2rem;
+  float: right;
+  direction: rtl;
+  width: 100%;
+  color: blanchedalmond;
+  display: block; }
+  .table-container th {
+    background-color: rgba(250, 163, 1, 0.8);
+    border: 3px solid rgba(250, 163, 1, 0.8);
+    padding: 10px; }
+  .table-container tr {
+    background-color: rgba(115, 128, 115, 0.8); }
+    .table-container tr:hover {
+      background-color: rgba(115, 128, 115, 0.5); }
+  .table-container .table {
+    display: flex;
+    justify-content: center; }
+  .table-container .table, .table-container td, .table-container tr, .table-container th {
+    padding: 10px;
+    text-align: center; }
+  .table-container a {
+    text-decoration: none;
+    color: whitesmoke;
+    margin-left: 4px;
+    margin-right: 2px;
+    padding: 10px 5px;
+    font-size: 16px;
+    display: inline-block;
+    border-radius: 5px; }
+    .table-container a.edit {
+      background-color: #0a7a0afb; }
+      .table-container a.edit:hover {
+        background-color: #033503fb; }
+    .table-container a.delete {
+      background-color: #f30d0d; }
+      .table-container a.delete:hover {
+        background-color: rgba(170, 16, 16, 0.973); }
