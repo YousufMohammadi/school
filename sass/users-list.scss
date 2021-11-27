@@ -1,0 +1,56 @@
+@import "variables.scss";
+.table-container{
+    margin-top: 2rem;
+    height: 100vh;
+    padding-top: 2rem;
+    float: right;
+    direction: rtl;
+    width: 100%;
+    // background-color: rgba(75, 75, 75,0.8);
+    color: blanchedalmond;
+    display: block;
+    th{
+        background-color: rgba($color-orange, 0.8);
+        border: 3px solid rgba($color-orange, 0.8);
+        padding: 10px;
+       
+    }
+    tr{
+        background-color: rgba($color-gray, 0.8);
+        &:hover{
+            background-color: rgba($color-gray, 0.5);
+        }
+    }
+    
+    .table{
+        display: flex;
+        justify-content: center;
+        
+    }
+    .table,td,tr,th{
+        padding: 10px;
+        text-align: center;        
+    }
+    a{
+        text-decoration: none;
+        color:$color-text-white;
+        margin-left: 4px;
+        margin-right: 2px;
+        padding: 10px 5px;
+        font-size: 16px;
+        display: inline-block;
+        border-radius: 5px;
+        &.edit{
+            background-color: $color-lightgreen;
+            &:hover{
+                background-color: $color-green;
+            }
+        }
+        &.delete{
+            background-color: $color-lightred;
+            &:hover{
+                background-color:$color-red;
+            }
+        }
+    }
+}
