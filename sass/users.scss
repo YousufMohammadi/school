@@ -1,12 +1,14 @@
-@import url("variables.scss");
+
+@import "variables.scss";
 .user-container{
     width: 100%;
     height: 100vh;
-    background-image:linear-gradient(rgba($color-dark, 0.3),rgba($color-dark, 0.9)), url("img/users.png");
-    background-blend-mode: overlay;
+    background-image:linear-gradient(rgba($color-dark, 0.6),rgba($color-dark, 0.9)), url("img/users.png");
+    // background-blend-mode: overlay;
     background-size: cover;
     background-position: center;
-    
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
     .user-header{
        padding:30px 40px ;
 
@@ -25,13 +27,31 @@
                     border-radius: 10px;
                     &:hover{
                         background-color: darken($color: $color-orange, $amount: 10);
+                
                     }
                 
                 }
             }
         }
-    
+  
     
     }
-    
+
+    .user-label{
+        background-color:rgba($color: $color-gray, $alpha: 0.5);
+        border-radius: 20px;
+        text-align: center;
+        width: 50%;
+        padding: 30px 20px;
+        transform: translateY(150%);
+        margin:0 auto;
+        border: 5px solid $color-text-white;
+        &:hover{
+            background-color:rgba($color: $color-gray, $alpha: 0.9);
+        }
+        h1{
+            color: $color-text-white;
+        }
+    }
+
 }
