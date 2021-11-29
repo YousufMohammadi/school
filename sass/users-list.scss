@@ -1,6 +1,6 @@
 @import "variables.scss";
 .table-container{
-    margin-top: 2rem;
+    background-image:linear-gradient(rgba($color-dark, 0.6),rgba($color-dark, 0.9)), url("img/users.png");
     height: 100vh;
     padding-top: 2rem;
     float: right;
