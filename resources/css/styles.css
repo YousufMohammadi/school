@@ -227,7 +227,7 @@ footer {
       color: whitesmoke; }
 
 .table-container {
-  margin-top: 2rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url("img/users.png");
   height: 100vh;
   padding-top: 2rem;
   float: right;
@@ -266,3 +266,51 @@ footer {
       background-color: #f30d0d; }
       .table-container a.delete:hover {
         background-color: rgba(170, 16, 16, 0.973); }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+.login-container {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url("img/login.png");
+  background-size: cover;
+  background-blend-mode: overlay;
+  background-position: center;
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative; }
+  .login-container .form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    padding: 2rem;
+    background-image: linear-gradient(rgba(250, 163, 1, 0.6), rgba(250, 163, 1, 0.9));
+    border-radius: 10px; }
+  .login-container input {
+    display: block;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(115, 128, 115, 0.7);
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    color: whitesmoke;
+    font-size: 0.8rem;
+    direction: rtl; }
+    .login-container input::placeholder {
+      color: whitesmoke; }
+    .login-container input.confirm {
+      background-color: #033503fb; }
+      .login-container input.confirm:hover {
+        background-color: #0a7a0afb;
+        cursor: pointer; }
+    .login-container input.reset {
+      background-color: rgba(170, 16, 16, 0.973); }
+      .login-container input.reset:hover {
+        background-color: #f30d0d;
+        cursor: pointer; }
