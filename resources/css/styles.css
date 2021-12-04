@@ -106,56 +106,59 @@ html {
 /*    section-2 contuct-form      */
 /* -----------------------------  */
 .contuct-form {
-  background-image: linear-gradient(to top right, rgba(2, 167, 0, 0.5), rgba(255, 140, 0, 0.7));
+  background-image: linear-gradient(to right top, #1271a8, #faa301fb);
   height: 100vh;
-  direction: rtl; }
+  direction: rtl;
+  position: relative; }
   .contuct-form .message {
     color: whitesmoke;
     font-size: 30px;
     display: block;
     text-align: center;
     padding-top: 10px; }
-  .contuct-form input {
-    height: 45px;
-    margin-bottom: 10px;
-    border-radius: 4px;
-    border: 2px solid #faa301fb;
-    background-color: #1a1a1a;
-    color: whitesmoke;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%; }
-  .contuct-form textarea {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  .contuct-form .form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 50%;
-    border: 1px solid #faa301fb;
-    background-color: #1a1a1a;
-    color: whitesmoke;
-    margin-bottom: 10px; }
-  .contuct-form input::placeholder {
-    color: whitesmoke; }
-
-input.submit {
-  color: whitesmoke;
-  padding: 10px 80px 10px 80px;
-  border-radius: 10px;
-  background-color: rgba(2, 167, 0, 0.5); }
-
-input.submit:hover {
-  color: rgba(2, 167, 0, 0.5);
-  background-color: #faa301fb;
-  border: 2px solid #02a700;
-  transition: color 0.5s,background-color 0.5s, border-bottom-color 0.5s; }
+    padding: 2rem; }
+    .contuct-form .form input {
+      display: block;
+      width: 100%;
+      border: none;
+      border-radius: 10px;
+      background-color: rgba(0, 0, 0, 0.4);
+      margin-bottom: 0.5rem;
+      padding: 0.5rem;
+      color: whitesmoke;
+      font-size: 0.8rem;
+      direction: rtl; }
+      .contuct-form .form input.confirm {
+        background-color: #0a7a0afb; }
+        .contuct-form .form input.confirm:hover {
+          background-color: #033503fb;
+          cursor: pointer; }
+    .contuct-form .form textarea {
+      display: block;
+      width: 100%;
+      border: none;
+      border-radius: 10px;
+      background-color: rgba(0, 0, 0, 0.4);
+      margin-bottom: 0.5rem;
+      padding: 0.5rem;
+      color: whitesmoke;
+      font-size: 0.8rem;
+      direction: rtl; }
+    .contuct-form .form input::placeholder {
+      color: whitesmoke; }
 
 /* -----------------------------  */
 /*    footer social-media      */
 /* -----------------------------  */
 footer {
   width: 100%;
-  background-color: #1a1a1a;
+  background-color: black;
   direction: rtl;
   float: right;
   padding-top: 40px;
@@ -177,10 +180,12 @@ footer {
     text-decoration: none;
     margin-left: 10px;
     margin-right: 10px;
-    font-size: 25px; }
+    font-size: 0.8rem; }
+    footer .privecy a:hover {
+      color: rgba(18, 113, 168, 0.6); }
   footer .describe {
     color: whitesmoke;
-    font-size: 20px; }
+    font-size: 0.8rem; }
     footer .describe img {
       width: 20px;
       height: 20px; }
@@ -212,6 +217,10 @@ footer {
           border-radius: 10px; }
           .user-container .user-header ul li a:hover {
             background-color: rgba(199, 130, 1, 0.984314); }
+          .user-container .user-header ul li a.first-element {
+            background-color: #033503fb; }
+            .user-container .user-header ul li a.first-element:hover {
+              background-color: rgba(6, 101, 6, 0.984314); }
   .user-container .user-label {
     background-color: rgba(115, 128, 115, 0.5);
     border-radius: 20px;
@@ -237,6 +246,7 @@ footer {
   display: block; }
   .table-container th {
     background-color: rgba(250, 163, 1, 0.8);
+    color: black;
     border: 3px solid rgba(250, 163, 1, 0.8);
     padding: 10px; }
   .table-container tr {
