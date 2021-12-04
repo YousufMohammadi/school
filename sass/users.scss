@@ -20,6 +20,7 @@
                 display: inline-block;
                 padding: 5px;
                 a{
+                    
                     color: $color-text-white;
                     background-color:$color-orange;
                     text-decoration: none;
@@ -28,6 +29,12 @@
                     &:hover{
                         background-color: darken($color: $color-orange, $amount: 10);
                 
+                    }
+                    &.first-element{
+                        background-color:$color-green;
+                        &:hover{
+                            background-color: lighten($color: $color-green, $amount: 10);
+                        }
                     }
                 
                 }

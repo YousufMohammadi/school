@@ -147,9 +147,10 @@ html{
     width: 50%;
 }
 .contuct-form{
-    background-image: linear-gradient(to top right , rgba(2, 167, 0, 0.5), rgba(255, 140, 0, 0.7));
+    background-image: linear-gradient(to right top , $color-blue, $color-orange);
     height: 100vh;
     direction: rtl;
+    position: relative;
     .message{
         color: $color-text-white;
         font-size: 30px;
@@ -157,49 +158,60 @@ html{
         text-align: center;
         padding-top: 10px;
     }
+    .form{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 50%;
+     //    height: auto;
+        padding: 2rem;
+         
     input{
-        height: 45px;
-        margin-bottom: 10px;
-        border-radius: 4px;
-        border: 2px solid $color-orange;
-        background-color: lighten($color: $color-dark, $amount: 10);
+        
+        display: block;
+        width: 100%;
+        border: none;
+        border-radius: 10px;
+        background-color: rgba($color: $color-dark, $alpha: 0.4);
+        margin-bottom: 0.5rem;
+        padding: 0.5rem;
         color: $color-text-white;
-        @include form();
-        @include form-width();
+        font-size: 0.8rem;
+        direction: rtl;
+        &.confirm{
+        background-color: $color-lightgreen;
+        &:hover{
+            background-color: $color-green;
+            cursor: pointer;
+        }
+    }
     }
     textarea{
-        @include form();
-        @include form-width();
-        border: 1px solid $color-orange;
-        background-color: lighten($color: $color-dark, $amount: 10);
+        display: block;
+        width: 100%;
+        border: none;
+        border-radius: 10px;
+        background-color: rgba($color: $color-dark, $alpha: 0.4);
+        margin-bottom: 0.5rem;
+        padding: 0.5rem;
         color: $color-text-white;
-        margin-bottom: 10px;
+        font-size: 0.8rem;
+        direction: rtl;
     }
+    
     input::placeholder{
         color:$color-text-white;
     }
 }
-input.submit{
-    color: $color-text-white;
-    padding:10px 80px 10px 80px;
-    border-radius: 10px;
-    background-color: rgba(2, 167, 0, 0.5);
-
 }
-input.submit:hover{
-    color: rgba(2, 167, 0, 0.5);
-    background-color: $color-orange;
-    border: 2px solid rgb(2, 167, 0);
-    transition: color 0.5s,background-color 0.5s, border-bottom-color 0.5s;
-}
-
 /* -----------------------------  */
 /*    footer social-media      */
 /* -----------------------------  */
 
 footer{
     width: 100%;
-    background-color: lighten($color: $color-dark, $amount: 10);
+    background-color: lighten($color: $color-dark, $amount: 0);
     direction: rtl;
     float: right;
     padding-top: 40px;
@@ -226,11 +238,14 @@ footer{
         text-decoration: none;
         margin-left: 10px;
         margin-right: 10px;
-        font-size: 25px;
+        font-size: 0.8rem;
+        &:hover{
+            color: rgba($color-blue, 0.6);
+        }
     }
     .describe{
         color: $color-text-white;
-        font-size: 20px;
+        font-size: 0.8rem;
         img{
             width: 20px;
             height: 20px;

@@ -5,6 +5,8 @@
     box-sizing: border-box;
 }
 .login-container{
+//    margin-top: 100px;
+//    margin-bottom: 150px;
     width: 100%;
     height: 100vh;
     background-image:linear-gradient(rgba($color-dark, 0.6),rgba($color-dark, 0.9)), url("img/login.png");
@@ -21,7 +23,7 @@
        left: 50%;
        transform: translate(-50%,-50%);
        width: 50%;
-    //    height: 60vh;
+    //    height: auto;
        padding: 2rem;
        background-image:linear-gradient(rgba($color-orange, 0.6),rgba($color-orange, 0.9));
        border-radius: 10px;
